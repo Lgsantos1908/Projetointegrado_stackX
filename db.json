@@ -1,0 +1,159 @@
+{
+  "users": [
+    {
+      "iduser": "001",
+      "email": "admin@teste.com.br",
+      "user": "admin",
+      "password": "1234",
+      "name": "Luiz Gabriel",
+      "fone": "47 992431255",
+      "endereco": "Rua papanduza",
+      "id": "31f4"
+    }
+  ],
+  "pedidos": [],
+  "PrincipaisPratos": [
+    {
+      "id": "1",
+      "nome": "Paella de Frutos do Mar",
+      "descricao": "Arroz espanhol cozido com frutos do mar variados, açafrão e pimentões, resultando em uma explosão de sabores.",
+      "valor": "R$ 65,00",
+      "foto": "https://images.pexels.com/photos/12419160/pexels-photo-12419160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "2",
+      "nome": "Risoto de Camarão",
+      "descricao": "Arroz carnaroli cozido no ponto certo, envolto em uma mistura de camarões suculentos, lulas macias e mexilhões frescos.",
+      "valor": "R$ 50,00",
+      "foto": "https://images.pexels.com/photos/15508173/pexels-photo-15508173/free-photo-of-camarao-risotto-risoto-cozinhando.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "3",
+      "nome": "Moqueca de Peixe e Camarão",
+      "descricao": "Peixe e camarões cozidos em um delicioso molho de coco, dendê, tomate, pimentão e coentro.",
+      "valor": "R$ 58,00",
+      "foto": "https://img.band.uol.com.br/image/2023/06/08/moqueca-de-peixe-com-camarao-1741.jpg"
+    },
+    {
+      "id": "4",
+      "nome": "Espaguete com Frutos do Mar",
+      "descricao": "Massa al dente com camarões, mexilhões e lulas em um molho de tomate e vinho branco.",
+      "valor": "R$ 55,00",
+      "foto": "https://images.pexels.com/photos/3009323/pexels-photo-3009323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ],
+  "MenuItens": [
+    {
+      "id": "100",
+      "nomeprato": "Paella de Frutos do Mar",
+      "descricaoprato": "Arroz espanhol cozido com frutos do mar variados, açafrão e pimentões, resultando em uma explosão de sabores.",
+      "valor": "R$ 65,00",
+      "foto": "https://images.pexels.com/photos/12419160/pexels-photo-12419160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "101",
+      "nomeprato": "Risoto de Camarão",
+      "descricaoprato": "Arroz carnaroli cozido no ponto certo, envolto em uma mistura de camarões suculentos, lulas macias e mexilhões frescos.",
+      "valor": "R$ 50,00",
+      "foto": "https://images.pexels.com/photos/15508173/pexels-photo-15508173/free-photo-of-camarao-risotto-risoto-cozinhando.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "102",
+      "nomeprato": "Moqueca de Peixe e Camarão",
+      "descricaoprato": "Peixe e camarões cozidos em um delicioso molho de coco, dendê, tomate, pimentão e coentro.",
+      "valor": "R$ 58,00",
+      "foto": "https://img.band.uol.com.br/image/2023/06/08/moqueca-de-peixe-com-camarao-1741.jpg"
+    },
+    {
+      "id": "103",
+      "nomeprato": "Espaguete com Frutos do Mar",
+      "descricaoprato": "Massa al dente com camarões, mexilhões e lulas em um molho de tomate e vinho branco.",
+      "valor": "R$ 55,00",
+      "foto": "https://images.pexels.com/photos/3009323/pexels-photo-3009323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "104",
+      "nomeprato": "Linguado à Belle Meunière",
+      "descricaoprato": "Filé de linguado cozido na manteiga dourada, servido com alcaparras e suco de limão.",
+      "valor": "R$ 50,00",
+      "foto": "link da foto"
+    },
+    {
+      "id": "105",
+      "nomeprato": "Salada Capitão do Sabor",
+      "descricaoprato": "Mix de folhas verdes, camarões grelhados, abacate, tomate cereja e molho de maracujá.",
+      "valor": "R$ 30,00",
+      "foto": "link da foto"
+    },
+    {
+      "id": "106",
+      "nomeprato": "Lula Recheada com Couscous",
+      "descricaoprato": "Lulas recheadas com couscous, tomate seco e ervas mediterrâneas.",
+      "valor": "R$ 48,00",
+      "foto": "link da foto"
+    },
+    {
+      "id": "107",
+      "nomeprato": "Ensopado de Mariscos",
+      "descricaoprato": "Uma seleção de mariscos cozidos lentamente em um caldo aromático, servido com pão artesanal.",
+      "valor": "R$ 38,00",
+      "foto": "link da foto"
+    },
+    {
+      "id": "108",
+      "nomeprato": "Tartar de Atum com Abacate",
+      "descricaoprato": "Cubos de atum fresco cru, misturados com abacate cremoso e temperos delicados.",
+      "valor": "R$ 42,00",
+      "foto": "link da foto"
+    },
+    {
+      "id": "109",
+      "nomeprato": "Pasta Frutos do Mar",
+      "descricaoprato": "Massa al dente com camarões, mexilhões e lulas em um molho de tomate e vinho branco.",
+      "valor": "R$ 55,00",
+      "foto": "link da foto"
+    },
+    {
+      "id": "110",
+      "nomeprato": "Salmão Grelhado com Molho de Mostarda e Mel",
+      "descricaoprato": "Suculentos filés de salmão grelhados, regados com um molho agridoce de mostarda e mel.",
+      "valor": "R$ 60,00",
+      "foto": "link da foto"
+    },
+    {
+      "id": "111",
+      "nomeprato": "Polvo à Lagareiro",
+      "descricaoprato": "Tentáculos de polvo grelhados e regados com azeite de oliva, alho e batatas ao murro.",
+      "valor": "R$ 58,00",
+      "foto": "link da foto"
+    },
+    {
+      "id": "112",
+      "nomeprato": "Ravióli de Lagosta",
+      "descricaoprato": "Massa recheada com carne de lagosta, servida com molho de manteiga e sálvia.",
+      "valor": "R$ 50,00",
+      "foto": "link da foto"
+    },
+    {
+      "id": "113",
+      "nomeprato": "Vatapá de Frutos do Mar",
+      "descricaoprato": "Um prato brasileiro inspirado, com camarões, peixe e lulas em um cremoso vatapá.",
+      "valor": "R$ 45,00",
+      "foto": "link da foto"
+    },
+    {
+      "id": "114",
+      "nomeprato": "Sobremesa Marítima",
+      "descricaoprato": "Sorvete de coco com calda de maracujá, decorado com lascas de coco tostado e frutas vermelhas.",
+      "valor": "R$ 20,00",
+      "foto": "link da foto"
+    },
+    {
+      "id": "115",
+      "nomeprato": "Mousse de Maracujá",
+      "descricaoprato": "Mousse leve e refrescante de maracujá, perfeito para encerrar a refeição.",
+      "valor": "R$ 18,00",
+      "foto": "link da foto"
+    }
+  ]
+}
