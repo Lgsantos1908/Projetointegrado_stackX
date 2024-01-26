@@ -72,6 +72,7 @@ export const Delivery = styled.div`
     align-items: center;
     justify-content:center;
     
+    
     border-radius: 12px;
     transition: background-color 0.5s ease-in-out;
     cursor: pointer;
@@ -86,19 +87,20 @@ export const Delivery = styled.div`
         height: 3rem;
     }
 
-
+    
     p {
         font-size: 1rem;
         color: #EEFBFF;
         font-weight: bold;
-        text-decoration: none;
         transition: color 0.5s ease-in-out;
+        
         
     }
 
     &:hover p {
         font-size: 1rem;
-        color: #324B4E;          
+        color: #324B4E;  
+                
     }
 
 
