@@ -23,7 +23,7 @@ export function Header(){
                 <li><Link to="/home">Inicio</Link></li>
                 <li><Link to="/menu">Cardápio</Link></li>
                 <li><Link to="/pedidosGerados">Meus pedidos</Link></li>
-                <Link to="/gerarpedido" style={{ textDecoration: 'none' }}>
+                <Link to="/login" style={{ textDecoration: 'none' }}>
                     <Delivery>
                         <img src={barcoicon} />
                         <p>Faça seu pedido</p>

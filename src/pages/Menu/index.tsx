@@ -39,7 +39,7 @@ export function Menu() {
                                 nomeprato={e.nomeprato}
                                 descricaoprato={e.descricaoprato}
                                 valor={e.valor}
-                                foto={e.foto} idprato={''}
+                                foto={e.foto}
                                 />
                             ))
                         }

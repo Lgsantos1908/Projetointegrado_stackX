@@ -4,6 +4,7 @@ import {
 } from './styles'
 import { Header } from '../../components/Header'
 import {Footer} from '../../components/Footer'
+import { CardUSer } from '../CardUser'
 
 export function History() {
     return (
@@ -45,6 +46,7 @@ export function History() {
                 </div>
                 <img src="https://images.pexels.com/photos/3338674/pexels-photo-3338674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
             </Content>
+
             <Footer/>
         </Container>
     )

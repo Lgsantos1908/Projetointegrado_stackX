@@ -15,7 +15,7 @@ export type prato = {
     foto: string;
 }
 
-export type user = {
+export type users = {
     iduser: string;
     user: string;
     password: string;
@@ -32,6 +32,7 @@ export type pedido = {
     nomeprato: string;
     descricaoprato: string;
     valor: string;
+    ValorTot : string;
     quantidade: number;
     status: string
 }

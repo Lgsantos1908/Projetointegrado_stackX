@@ -16,7 +16,7 @@ export function PratosMenu({nomeprato,descricaoprato, valor, foto}:menuItens){
                 <CardFront style={{backgroundImage: `url(${foto})`}}/>
                 <CardBack>
                     <p>{descricaoprato}</p>
-                    <h4>{valor}</h4>
+                    <h4>R${valor}</h4>
                 </CardBack>
             </Card>
         </Container>

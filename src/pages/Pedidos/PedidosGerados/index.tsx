@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react'
 import {
     Container,
+    Content,
     TableContent
 } from './styles'
-import { Trash } from '@phosphor-icons/react';
+import {Trash } from '@phosphor-icons/react';
 
 export function PedidosGerados() {
     const [pedidos, setPedidos] = useState([]);
+    const [pedidoUser, setPedidosUser] = useState([]);
+    const [user, setUser] = useState('');
+
 
 
     useEffect(()=> {
@@ -20,84 +24,90 @@ export function PedidosGerados() {
             (resp) => resp.json()
             .then((data) => {
                 setPedidos(data)
-                console.log(pedidos)
+                
             })
         )
         .catch((err) => console.log(err))
     }, []);
 
-    function removePedido(id, index) {
-        fetch(`http://localhost:5000/pedidos/${id}`, {
+    function removePedido(id: string, name: string) {
+
+        const resposta = window.confirm(`Deseja cancelar a comrap do item ${name} ?`);
+        if(resposta) {
+            fetch(`http://localhost:5000/pedidos/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
             },
-        })
-        .then((resp) => {
-            console.log(resp);
-            if (resp.ok) {
+            })
+            .then((resp) => resp.json())
+            .then((data) => {
                 setPedidos(pedidos.filter((pedido) => pedido.id !== id))
-                console.log(`Item com ID ${id} removido com sucesso.`);
-            } else {
-                console.error(`Falha ao remover o item com ID ${id}.`);
-            }
-        })
-        .catch((error) => {
-            console.error('Erro na solicitação:', error);
-        });
+                alert(`${name} removido com sucesso!`)
+            })
+            .catch((err) => console.log(err))
+        } else {
+            alert("Ação cancelada")
+        }
     }
-    
- 
+
+    function filtraUser() {
+
+        if(user ==='') {
+            alert('Informe seu usuário!')
+        } else {
+            setPedidosUser(pedidos.filter((e) =>  e.name === user))
+        
+        }
+    }
     
     return (
         <Container>
-            <div>
-                <h1>Meus pedidos</h1>
-            </div>
+            <Content>
+                <div>
+                    <h1>Meus pedidos</h1>
+                </div>
 
-            <input type="submit" value="Gerar pedido"/>
-            
-            <TableContent>
-            <thead>
-                        <th>Nome</th>
-                        <th>Prato</th>
-                        <th>Quantidade</th>
-                        <th>Valor</th>
-                        <th>Status</th>
-                        <th>Excluir</th>
-                </thead>
-           
-                {pedidos.map((pedido, indexPedido) => (
-                    
-                    <div key={indexPedido}>
-                    
-                        <tbody>
-                            {Object.values(pedido).map((item, indexItem) => (
-                                <tr key={indexItem}>
-                                    <td>{item.name}</td>
-                                    <td>{item.nomeprato}</td>
-                                    <td>{item.quantidade}</td>
-                                    <td>{item.valor}</td>
-                                    <td>{item.status}</td>
-                                    <td>
-                                    <input 
-                                        type='submit'                                        
-                                        onClick={() => removePedido(pedidos[0].id)}
-                                        style={{ display: item.id === undefined ? 'none' : 'block' }}
-                                    >
-                                        
-                                    </input>   
-                                    </td>
-                                </tr>
-                            ))}
-                        </tbody>
-                       
-                    </div>
-                ))}
+                <input type="text" placeholder='Useário' onChange={(e) => setUser(e.target.value)} />
+                <input type='submit' value="Visualizar pedidos" onClick={filtraUser}/>
                 
-            </TableContent>
-
-            
+                    {
+                        user? (
+                            <TableContent>
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Prato</th>
+                                        <th>Quantidade</th>
+                                        <th>Valor Unitário</th>
+                                        <th>Valor Total</th>
+                                        <th>Status</th>
+                                        <th>Excluir</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    {pedidoUser.map((e, index) => (
+                                        <tr key={index}>
+                                            <td>{e.name}</td>
+                                            <td>{e.nomeprato}</td>
+                                            <td>{e.quantidade}</td>
+                                            <td>R$ {e.valor}</td>
+                                            <td>R$ {e.valorTot}</td>
+                                            <td>{e.status}</td>
+                                            <td>
+                                            <button                                       
+                                                onClick={() => removePedido(e.id, e.nomeprato)}
+                                            > <Trash size={26} width='bold'/></button>   
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </TableContent>
+                        ):(
+                            <h1>Informe seu usuario para verificar a lista de pedidos</h1>
+                        )
+                    }
+            </Content>
         </Container>
     )    
 }
