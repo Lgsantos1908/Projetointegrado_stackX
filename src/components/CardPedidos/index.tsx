@@ -3,6 +3,7 @@ import { menuItens, pedido, users } from '../../types/types';
 import { Link } from 'react-router-dom';
 import { 
     Container,
+    Content,
     FormPedido,
     DadosItem,
     InfoInput,
@@ -86,43 +87,46 @@ export function CardPedidos({iduser, name}: users){
     
     return (
         <Container>
-            <BtnGerarPedido>
-                <Link to="/pedidosGerados">
-                    <input type="submit"  value="Ir para carrinho"  />
-                </Link>
-            </BtnGerarPedido>
+            <Content>
+                <h1>Pedidos</h1>
+                <BtnGerarPedido>
+                    <Link to="/pedidosGerados">
+                        <input type="submit"  value="Ir para carrinho"  />
+                    </Link>
+                </BtnGerarPedido>
 
-            <FormPedido>
-                {
-                    cardItem.map((e,index) =>(
-                            <form  key={index}>
-                                <DadosItem>
-                                    <div>
-                                        <h2>{e.nomeprato}</h2>
-                                        <h4>{e.descricaoprato}</h4>
-                                        <h3>R$ {e.valor}</h3>
-                                    </div>
-                                    <img src={e.foto}  />
-                                </DadosItem>
-                                <InfoInput >
-                                    <div>
-                                    <input 
-                                        type="button"
-                                        value="Adicionar ao carrimho"
-                                        name="checkboxName"
-                                        onClick={(e) => handleChange(index,  qtdItem)}/>
-                                    </div>
-                                    <input 
-                                        type="number" 
-                                        name="quantidade" 
-                                        placeholder='Informe a quantidade' 
-                                        onChange={(e) => setQtdItem(e.target.value)}
-                                    />    
-                                </InfoInput>
-                            </form>
-                    ))
-                }
-            </FormPedido>
+                <FormPedido>
+                    {
+                        cardItem.map((e,index) =>(
+                                <form  key={index}>
+                                    <DadosItem>
+                                        <div>
+                                            <h2>{e.nomeprato}</h2>
+                                            <h4>{e.descricaoprato}</h4>
+                                            <h3>R$ {e.valor}</h3>
+                                        </div>
+                                        <img src={e.foto}  />
+                                    </DadosItem>
+                                    <InfoInput >
+                                        <div>
+                                        <input 
+                                            type="button"
+                                            value="Adicionar ao carrinho"
+                                            name="checkboxName"
+                                            onClick={(e) => handleChange(index,  qtdItem)}/>
+                                        </div>
+                                        <input 
+                                            type="number" 
+                                            name="quantidade" 
+                                            placeholder='Informe a quantidade' 
+                                            onChange={(e) => setQtdItem(e.target.value)}
+                                        />    
+                                    </InfoInput>
+                                </form>
+                        ))
+                    }
+                </FormPedido>
+            </Content>
           
             
         </Container>

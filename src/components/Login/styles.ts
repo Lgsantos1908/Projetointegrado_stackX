@@ -5,14 +5,7 @@ export const Container = styled.div`
     height: 100%;
     padding: 5rem;;
 
-    h1 {
-    width: 100%;
-    font-size: 3rem;
-    color: #617C7F;
-    padding: 0.8rem;
-    display: flex;
-    justify-content:start;
-    }
+   
     
 `;
 
@@ -20,6 +13,19 @@ export const FormUser = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    div{    
+        width: 100%;
+        h1 {
+            
+            font-size: 3rem;
+            color: #617C7F;
+            padding: 0.8rem;
+            display: flex;
+            justify-content:start;
+    }
+    }
     
     form {
         width: 700px;

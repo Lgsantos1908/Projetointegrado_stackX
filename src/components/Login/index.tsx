@@ -10,10 +10,10 @@ import { CardPedidos } from "../CardPedidos";
 
 export function Login() {
     const [userData, setUserData] = useState<users[]>([]);
-    const [confirmLogin, setConfirmLogin] = useState ('');
-    const [userLogin, setUserLogin] = useState('');
-    const [password, setPassword] = useState('');
-    const [idlogin, setIdLogin] = useState('');
+    const [confirmLogin, setConfirmLogin] = useState ();
+    const [userLogin, setUserLogin] = useState();
+    const [password, setPassword] = useState();
+    const [idlogin, setIdLogin] = useState();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -55,20 +55,12 @@ export function Login() {
 
                 setUserLogin(data.userLogin)
                 setPassword(data.password)
-                setIdLogin(id)
-
-                
-
-                console.log(userLogin)
-                console.log(password)
-                console.log(idlogin)
-                
+                setIdLogin(id)                
 
                 setConfirmLogin('ok')
 
                 alert("Cadastro Realizado!");
-        
-                
+
                 
             } else {
                 alert("Senha incorreta!");
@@ -80,7 +72,7 @@ export function Login() {
 
     return (
         <Container>
-            <h1>Login</h1>
+            
                 {
                     confirmLogin ? (
                         <CardPedidos 
@@ -91,6 +83,9 @@ export function Login() {
                     ):(
                         
                         <FormUser>
+                            <div>
+                                <h1>Login</h1>
+                            </div>
                             <form>
                                 <h2>Login</h2>
                                 <input type="text" onChange={(e) => setUserLogin(e.target.value)} />
