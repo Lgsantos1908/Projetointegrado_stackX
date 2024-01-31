@@ -52,7 +52,6 @@ export const AboutUs = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #324B4E;
 
     img {
         width: 50%;
@@ -69,10 +68,10 @@ export const Description = styled.div`
     align-items: center;
     flex-direction: column;
     
-    h2 {
+    h1 {
             width: 100%;
             font-size: 3rem;
-            color: #617C7F;
+            color: var(--title);
             margin-top: 1.78rem;
             padding: 0.8rem;
             display: flex;
@@ -90,13 +89,21 @@ export const Description = styled.div`
     button{
         width: 8rem;
         height: 2rem;
-        margin-top: 1rem;
-        background: #00C59D;
-        border-radius: 10px;
+        color: black;
+        font-size: 15px;
+        margin-top: 20px;
         border: none;
+        border-radius: 12px;
+        background: var(--bg_button);        
+        cursor: pointer;
+        transition: background-color 0.5s ease-in-out;
+
+        &:hover {
+            background-color: var(--bg_button_click);
+        } 
 
         a{
-            color: #364B45;
+            color: #222233;
             text-decoration: none;
         }
     }

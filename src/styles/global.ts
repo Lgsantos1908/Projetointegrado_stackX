@@ -3,17 +3,12 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
     :root {
         --background: #324B4E;
-        --white: #FFFFF;
-        --white-600: #F0F0F0;
-        --white-400: #ededed;
-
-        --grey-300: #C6C6D3;
-        --grey-400: #a1a1aa;
-
-        --dark-300: #3F3F46;
-        --dark-400: #27272A;
-        --dark-500: #3E3E41;
-        --dark-600: #1C1C1C;
+        --bg_footer: #fff;
+        --bg_form: #627C7F;
+        --bg_button: #00C59D ;
+        --bg_button_click: #00B2C1;
+        --title: #617C7F;
+        
     }
     *{
         margin: 0;

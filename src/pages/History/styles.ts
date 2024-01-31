@@ -3,7 +3,6 @@ import styled from "styled-components"
 export const Container = styled.div`
     width: 100%;
     height: auto;
-    background: #324B4E;
 `;
 
 export const Content = styled.div`
@@ -18,8 +17,8 @@ export const Content = styled.div`
             padding: 10px;
         }
 
-        h2{
-            color: #617C7F;
+        h1{
+            color: var(--title);
             font-size: 48px;
             margin-top: 80px;
         }

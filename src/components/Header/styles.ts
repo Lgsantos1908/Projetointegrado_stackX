@@ -78,7 +78,7 @@ export const Delivery = styled.div`
     cursor: pointer;
 
     &:hover {
-        background-color: #00B2C1;
+        background-color: var(--bg_button_click);
                 
     }
 

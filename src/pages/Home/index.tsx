@@ -25,7 +25,7 @@ export function Home() {
             </Content>
             <AboutUs>
                 <Description>
-                    <h2>Sobre nós</h2>
+                    <h1>Sobre nós</h1>
                     <p>
                         No pitoresco vilarejo costeiro, nasceu o Capitão do sabor, 
                         um restaurante de frutos do mar fundado pelo pescador visionário Antonio. Desde sua modesta inauguração,

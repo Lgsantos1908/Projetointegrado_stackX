@@ -21,7 +21,7 @@ export const Description = styled.div`
     transition: all .3s ease;
 
     p{
-        color: #b0b0ba;
+        color: white;
         padding-top: 0.32rem;
     }
 

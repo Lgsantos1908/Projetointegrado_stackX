@@ -2,17 +2,13 @@ import {
     Container,
     Content
 } from './styles'
-import { Header } from '../../components/Header'
-import {Footer} from '../../components/Footer'
-import { CardUSer } from '../CardUser'
 
 export function History() {
     return (
         <Container>
-            <Header/>
             <Content>
                 <div>
-                    <h2>Nossa história</h2>
+                    <h1>Nossa história</h1>
                     <p>
                         Numa manhã ensolarada, nas pitorescas margens de um vilarejo costeiro,
                         a visão audaciosa de Antonio, um pescador intrépido, materializou-se no 
@@ -47,7 +43,6 @@ export function History() {
                 <img src="https://images.pexels.com/photos/3338674/pexels-photo-3338674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
             </Content>
 
-            <Footer/>
         </Container>
     )
 }

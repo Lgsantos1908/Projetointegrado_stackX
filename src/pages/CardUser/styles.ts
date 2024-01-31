@@ -8,7 +8,7 @@ export const Container = styled.div`
     h1 {
     width: 100%;
     font-size: 3rem;
-    color: #617C7F;
+    color: var(--title);
     padding: 0.8rem;
     display: flex;
     justify-content:start;
@@ -29,7 +29,7 @@ export const FormUser = styled.div`
         height: 350px;
         padding: 15px;
         border-radius: 15px;
-        background: #627C7F;
+        background: var(--bg_form);
        
         display: flex;
         align-items: center;
@@ -50,13 +50,13 @@ export const FormUser = styled.div`
             font-size: 15px;
             border: none;
             border-radius: 12px;
-            background: #00C59D; 
+            background: var(--bg_button); 
             margin-top: 10px;       
             cursor: pointer;
             transition: background-color 0.5s ease-in-out;
 
             &:hover {
-                background-color: #00B2C1;
+                background-color: var(--bg_button_click);
             }   
         }
 

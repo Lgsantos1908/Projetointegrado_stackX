@@ -9,7 +9,7 @@ export const Content = styled.div`
     h1 {
             
             font-size: 3rem;
-            color: #617C7F;
+            color: var(--title);
             padding: 0.8rem;
             display: flex;
             justify-content:start;
@@ -27,7 +27,7 @@ export const FormPedido = styled.div`
         margin-top: 3.75rem;;
         padding: 0.94rem;
         border-radius: 3.13rem 0;
-        background: #627C7F;
+        background: var(--bg_form);
     }
   
 `;
@@ -74,12 +74,12 @@ export const InfoInput = styled.div`
                 border: none;              
                 color: black;
                 border-radius: 0.75rem;
-                background: #00C59D;        
+                background: var(--bg_button);        
                 cursor: pointer;
                 transition: background-color 0.5s ease-in-out;
 
                 &:hover {
-                background-color: #00B2C1;
+                background-color: var(--bg_button_click);
             }
             }
 
@@ -116,12 +116,12 @@ export const BtnGerarPedido = styled.div`
         font-size: 0.93rem;
         border: none;
         border-radius: 0.75rem;
-        background: #00C59D;        
+        background: var(--bg_button);        
         cursor: pointer;
         transition: background-color 0.5s ease-in-out;
 
         &:hover {
-            background-color: #00B2C1;
+            background-color: var(--bg_button_click);
         }   
     }
 
