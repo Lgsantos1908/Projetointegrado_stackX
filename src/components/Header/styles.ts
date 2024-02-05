@@ -19,7 +19,7 @@ export const MenuInicial = styled.div`
 
         h1{
             font-size: 1rem;
-            border-radius: 10px;
+            border-radius: 1.6rem;
             color: white;
         }
     }
@@ -73,7 +73,7 @@ export const Delivery = styled.div`
     justify-content:center;
     
     
-    border-radius: 12px;
+    border-radius: 0.75rem;
     transition: background-color 0.5s ease-in-out;
     cursor: pointer;
 

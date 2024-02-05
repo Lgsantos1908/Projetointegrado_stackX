@@ -7,31 +7,31 @@ export const Container = styled.div`
 
 export const Content = styled.div`
         display: flex;
-        padding: 10px;
+        padding: 0.62rem;
         align-items: center;
         justify-content: center;
         div{
             width: 50%;
             display: flex;
             flex-direction: column;
-            padding: 10px;
+            padding: 0.62rem;
         }
 
         h1{
             color: var(--title);
-            font-size: 48px;
-            margin-top: 80px;
+            font-size: 3rem;
+            margin-top: 5rem;
         }
 
         p{
             color: #E6FFF6;
-            font-size: 19px;
-            margin-top: 20px;
+            font-size: 1.18rem;
+            margin-top: 1.25rem;
         }
 
         img{
             height: 80vh;
-            margin-top: 80px;
-            border-radius: 20px;
+            margin-top: 5rem;
+            border-radius: 1.25rem;
         }
 `;

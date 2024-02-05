@@ -6,17 +6,14 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-    padding: 50px;
+    padding: 3.12rem;
     height: auto;
     display: flex;
     flex-direction: column;
-
-    background: #324B4E;
-
     h1 {
         width: 100%;
         font-size: 3rem;
-        color: #617C7F;
+        color: var(--title);
         margin-top: 1.78rem;
         padding: 0.8rem;
         display: flex;

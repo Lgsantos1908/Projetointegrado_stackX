@@ -12,8 +12,8 @@ export const Card = styled.div`
 export const Container = styled.div`
     width: 310px;
     height: 380px;
-    padding: 20px;
-    margin-top: 25px;
+    padding: 1.25rem;
+    margin-top: 1.56rem;
 
     &:hover > ${Card} {
     cursor: pointer;
@@ -25,7 +25,7 @@ export const Container = styled.div`
 
     h3{
         color: white;
-        height: 55px;       
+        height: 3.43rem;       
         display: flex;
         align-items: center;
         justify-content: center;
@@ -67,12 +67,12 @@ export const CardBack = styled.div`
     gap: 5rem;
 
     p {
-        font-size: 20px;
-        padding: 20px;
+        font-size: 1.25rem;
+        padding: 1.25rem;
     }
 
     h4{
-        font-size: 35px;
+        font-size: 2.18rem;
     }
     
 `;

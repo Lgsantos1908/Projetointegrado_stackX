@@ -51,19 +51,6 @@
   ],
   "pedidos": [
     {
-      "id": "724f",
-      "iduser": [
-        "f416"
-      ],
-      "name": "lgsant",
-      "nomeprato": "Paella de Frutos do Mar",
-      "descricaoprato": "Arroz espanhol cozido com frutos do mar variados, açafrão e pimentões, resultando em uma explosão de sabores.",
-      "valor": "65,00",
-      "valorTot": 325,
-      "quantidade": "5",
-      "status": "Em análise"
-    },
-    {
       "id": "ed00",
       "iduser": [
         "aeae"

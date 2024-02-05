@@ -3,8 +3,6 @@ import {
     Content,
     ForMenu,
 } from './styles'
-import { Header } from '../../components/Header'
-import {Footer} from '../../components/Footer'
 import {PratosMenu} from '../../components/PratosMenu'
 import { useEffect, useState } from 'react'
 import { menuItens } from '../../types/types'

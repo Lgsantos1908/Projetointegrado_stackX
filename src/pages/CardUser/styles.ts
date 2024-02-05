@@ -27,8 +27,8 @@ export const FormUser = styled.div`
     form {
         width: 700px;
         height: 350px;
-        padding: 15px;
-        border-radius: 15px;
+        padding: 0.93rem;
+        border-radius: 0.93rem;
         background: var(--bg_form);
        
         display: flex;
@@ -39,19 +39,19 @@ export const FormUser = styled.div`
         input{
             width: auto;
             border: 1px solid #ccc;
-            padding: 5px;
-            border-radius: 10px;
+            padding: 0.31rem;
+            border-radius: 0.62rem;
         }
 
         input[type="submit"] {
             width: 8rem;
             height: 2rem;
             color: black;
-            font-size: 15px;
+            font-size: 0.93rem;
             border: none;
-            border-radius: 12px;
+            border-radius: 0.75rem;
             background: var(--bg_button); 
-            margin-top: 10px;       
+            margin-top: 0.62rem;       
             cursor: pointer;
             transition: background-color 0.5s ease-in-out;
 

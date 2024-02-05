@@ -12,7 +12,7 @@ export const Content = styled.div`
         h1{
             width: 100%;
             font-size: 3rem;
-            color: #617C7F;
+            color: var(--title);
             margin-top: 1.78rem;
             padding: 0.8rem;
             display: flex;
@@ -23,7 +23,7 @@ export const Content = styled.div`
     h1{
             width: 100%;
             font-size: 2rem;
-            color: #617C7F;
+            color: var(--title);
             margin-top: 1.78rem;
             padding: 0.8rem;
             display: flex;
@@ -35,25 +35,25 @@ export const Content = styled.div`
             width: auto;
             height: 2rem;
             border: 1px solid #ccc;
-            padding: 5px;
-            margin: 5px;
-            border-radius: 10px;
+            padding:0.31rem;
+            margin:0.31rem;
+            border-radius: 0.62rem;
         }
     
     input[type="submit"] {
             width: 8rem;
             height: 2rem;
             color: black;
-            font-size: 15px;
+            font-size: 0.93rem;
             border: none;
-            margin: 5px;
-            border-radius: 12px;
-            background: #00C59D;        
+            margin:0.31rem;
+            border-radius: 0.75rem;
+            background: var(--bg_button);        
             cursor: pointer;
             transition: background-color 0.5s ease-in-out;
 
             &:hover {
-                background-color: #00B2C1;
+                background-color: var(--bg_button_click);
             }   
         }
 `;
@@ -114,7 +114,7 @@ export const TableContent = styled.table`
                     color: white;
                     transition: color 0.2s;
                     line-height: 0;
-                    border-radius: 2px;
+                    border-radius: 0.12rem;
 
                     :hover {
                         cursor: pointer;

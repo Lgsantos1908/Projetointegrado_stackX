@@ -90,10 +90,10 @@ export const Description = styled.div`
         width: 8rem;
         height: 2rem;
         color: black;
-        font-size: 15px;
-        margin-top: 20px;
+        font-size: 0.93rem;
+        margin-top: 1.25rem;
         border: none;
-        border-radius: 12px;
+        border-radius: 0.75rem;
         background: var(--bg_button);        
         cursor: pointer;
         transition: background-color 0.5s ease-in-out;
