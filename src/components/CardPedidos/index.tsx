@@ -19,7 +19,7 @@ export function CardPedidos({iduser, name}: users){
     const [useLogin, setUserLogin] = useState('');
 
     useEffect(()=> {
-        fetch("http://localhost:5000/MenuItens", {
+        fetch("https://jsonserver.online/user/s74-PhQ-LOH/MenuItens", {
             method: "GET", 
             headers: {
                 "Content-Type" : 'application/json'
@@ -67,7 +67,7 @@ export function CardPedidos({iduser, name}: users){
 
             alert(`Item ${selectedOption.nomeprato} adicionado a lista`)
 
-            fetch('http://localhost:5000/pedidos', {
+            fetch('https://jsonserver.online/user/s74-PhQ-LOH/pedidos', {
                 method: "POST",
                 headers: {
                     'Content-type': 'application/json',

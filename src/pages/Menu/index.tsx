@@ -10,7 +10,7 @@ import { menuItens } from '../../types/types'
 export function Menu() {
     const [menu, setmenu] = useState<menuItens[]>([]);
     useEffect(()=> {
-        fetch("http://localhost:5000/MenuItens", {
+        fetch("https://jsonserver.online/user/s74-PhQ-LOH/MenuItens", {
             method: "GET", 
             headers: {
                 "Content-Type" : 'application/json'

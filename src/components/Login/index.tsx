@@ -17,7 +17,7 @@ export function Login() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost:5000/users", {
+        fetch("https://jsonserver.online/user/s74-PhQ-LOH/users", {
             method: "GET",
             headers: {
                 "Content-Type": 'application/json'

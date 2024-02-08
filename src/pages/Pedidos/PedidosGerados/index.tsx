@@ -14,7 +14,7 @@ export function PedidosGerados() {
 
 
     useEffect(()=> {
-        fetch("http://localhost:5000/pedidos", {
+        fetch("https://jsonserver.online/user/s74-PhQ-LOH/pedidos", {
             method: "GET", 
             headers: {
                 "Content-Type" : 'application/json'
@@ -34,7 +34,7 @@ export function PedidosGerados() {
 
         const resposta = window.confirm(`Deseja cancelar a comrap do item ${name} ?`);
         if(resposta) {
-            fetch(`http://localhost:5000/pedidos/${id}`, {
+            fetch(`https://jsonserver.online/user/s74-PhQ-LOH/pedidos/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

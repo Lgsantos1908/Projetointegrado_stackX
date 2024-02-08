@@ -15,7 +15,7 @@ export function Especialday(){
     const [principaispratos, setPrincipaisPratos] = useState<prato[]>([])
 
     useEffect(()=> {
-        fetch("http://localhost:5000/PrincipaisPratos", {
+        fetch("https://jsonserver.online/user/s74-PhQ-LOH/PrincipaisPratos", {
             method: "GET", 
             headers: {
                 "Content-Type" : 'application/json'

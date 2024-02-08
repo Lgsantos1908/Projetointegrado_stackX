@@ -17,7 +17,7 @@ export function CardUser(){
     const [telefone, setTelefone] = useState ('');
 
     useEffect(()=> {
-        fetch("http://localhost:5000/users", {
+        fetch("https://jsonserver.online/user/s74-PhQ-LOH/users", {
             method: "GET", 
             headers: {
                 "Content-Type" : 'application/json'
@@ -41,7 +41,7 @@ export function CardUser(){
             telefone: telefone,
         }
 
-        fetch('http://localhost:5000/users', {
+        fetch('https://jsonserver.online/user/s74-PhQ-LOH/users', {
                 method: "POST",
                 headers: {
                     'Content-type': 'application/json',

@@ -17,63 +17,78 @@
       "telefone": "47992431255"
     },
     {
-      "id": "cd8d",
-      "user": "amanda",
-      "password": "123",
-      "name": "Amanda Lodi",
-      "endereço": "Reee",
-      "telefone": "4799999"
-    },
-    {
-      "id": "6f49",
+      "id": "1376",
       "user": "",
       "password": "",
       "name": "",
       "endereço": "",
       "telefone": ""
-    },
-    {
-      "id": "f416",
-      "user": "lgsant",
-      "password": "123",
-      "name": "lgsa",
-      "endereço": "123",
-      "telefone": "213"
-    },
-    {
-      "id": "aeae",
-      "user": "amandakreusberg",
-      "password": "031904Alk.",
-      "name": "Amanda",
-      "endereço": "Rua Papanduva n48 - São Vicente - Itj",
-      "telefone": ""
     }
   ],
   "pedidos": [
     {
-      "id": "ed00",
+      "id": "05a6",
       "iduser": [
-        "aeae"
+        "33cb"
       ],
-      "name": "amandakreusberg",
-      "nomeprato": "Sobremesa Marítima",
-      "descricaoprato": "Sorvete de coco com calda de maracujá, decorado com lascas de coco tostado e frutas vermelhas.",
-      "valor": "20,00",
-      "valorTot": 20,
+      "name": "admin",
+      "nomeprato": "Paella de Frutos do Mar",
+      "descricaoprato": "Arroz espanhol cozido com frutos do mar variados, açafrão e pimentões, resultando em uma explosão de sabores.",
+      "valor": "65,00",
+      "valorTot": 65,
       "quantidade": "1",
       "status": "Em análise"
     },
     {
-      "id": "2d93",
+      "id": "29c8",
       "iduser": [
-        "aeae"
+        "33cb"
       ],
-      "name": "amandakreusberg",
-      "nomeprato": "Linguado à Belle Meunière",
-      "descricaoprato": "Filé de linguado cozido na manteiga dourada, servido com alcaparras e suco de limão.",
-      "valor": "50,00",
-      "valorTot": 50,
+      "name": "admin",
+      "nomeprato": "Paella de Frutos do Mar",
+      "descricaoprato": "Arroz espanhol cozido com frutos do mar variados, açafrão e pimentões, resultando em uma explosão de sabores.",
+      "valor": "65,00",
+      "valorTot": 65,
       "quantidade": "1",
+      "status": "Em análise"
+    },
+    {
+      "id": "b24f",
+      "iduser": [
+        "33cb"
+      ],
+      "name": "admin",
+      "nomeprato": "Risoto de Camarão",
+      "descricaoprato": "Arroz carnaroli cozido no ponto certo, envolto em uma mistura de camarões suculentos, lulas macias e mexilhões frescos.",
+      "valor": "50,00",
+      "valorTot": 100,
+      "quantidade": "2",
+      "status": "Em análise"
+    },
+    {
+      "id": "e20f",
+      "iduser": [
+        "33cb"
+      ],
+      "name": "admin",
+      "nomeprato": "Moqueca de Peixe e Camarão",
+      "descricaoprato": "Peixe e camarões cozidos em um delicioso molho de coco, dendê, tomate, pimentão e coentro.",
+      "valor": "58,00",
+      "valorTot": 174,
+      "quantidade": "3",
+      "status": "Em análise"
+    },
+    {
+      "id": "e4e7",
+      "iduser": [
+        "33cb"
+      ],
+      "name": "admin",
+      "nomeprato": "Espaguete com Frutos do Mar",
+      "descricaoprato": "Massa al dente com camarões, mexilhões e lulas em um molho de tomate e vinho branco.",
+      "valor": "55,00",
+      "valorTot": 220,
+      "quantidade": "4",
       "status": "Em análise"
     }
   ],
