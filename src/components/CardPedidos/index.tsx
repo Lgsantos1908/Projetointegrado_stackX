@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { menuItens, pedido, users } from '../../types/types';
+import { menuItens, users } from '../../types/types';
 import { Link } from 'react-router-dom';
 import { 
     Container,
@@ -13,10 +13,8 @@ import {
 
 export function CardPedidos({iduser, name}: users){
     const [cardItem, setCardItem] = useState<menuItens[]>([]);
-    const [pedidos, setPedidos] = useState<pedido[]>([]);
     const [itemselecionado, setItemselecionado] = useState<boolean[]>([]);
     const [qtdItem, setQtdItem] = useState(0);
-    const [useLogin, setUserLogin] = useState('');
 
     useEffect(()=> {
         fetch("https://jsonserver.online/user/s74-PhQ-LOH/MenuItens", {
@@ -42,7 +40,7 @@ export function CardPedidos({iduser, name}: users){
         updatedSelection[index] = !itemselecionado[index];
         setItemselecionado(updatedSelection);
         setQtdItem(quantidade)
-        setUserLogin(name)
+
 
         const valorTot = qtdItem * parseFloat(selectedOption.valor)
            
@@ -78,7 +76,6 @@ export function CardPedidos({iduser, name}: users){
                 .then((data) => {console.log(data)})
                 .catch((err) => console.log(err)) 
 
-                setPedidos([])
                 setQtdItem(0)
             
         }                       
@@ -113,13 +110,13 @@ export function CardPedidos({iduser, name}: users){
                                             type="button"
                                             value="Adicionar ao carrinho"
                                             name="checkboxName"
-                                            onClick={(e) => handleChange(index,  qtdItem)}/>
+                                            onClick={() => handleChange(index,  qtdItem)}/>
                                         </div>
                                         <input 
                                             type="number" 
                                             name="quantidade" 
                                             placeholder='Informe a quantidade' 
-                                            onChange={(e) => setQtdItem(e.target.value)}
+                                            onChange={(e) => setQtdItem(e.target.valueAsNumber)}
                                         />    
                                     </InfoInput>
                                 </form>
