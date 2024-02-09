@@ -10,10 +10,10 @@ import { CardPedidos } from "../CardPedidos";
 
 export function Login() {
     const [userData, setUserData] = useState<users[]>([]);
-    const [confirmLogin, setConfirmLogin] = useState ();
-    const [userLogin, setUserLogin] = useState();
-    const [password, setPassword] = useState();
-    const [idlogin, setIdLogin] = useState();
+    const [confirmLogin, setConfirmLogin] = useState ('');
+    const [userLogin, setUserLogin] = useState('');
+    const [password, setPassword] = useState('');
+    const [idlogin, setIdLogin] = useState (['']);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -45,7 +45,8 @@ export function Login() {
         const name = userData.filter((e) => e.user === userLogin);
         const senha = name.filter((e) => e.password === password);
 
-        const id = name.map(e => e.id)
+        const id = name.flatMap(e => e.iduser);
+
 
         if (name.length > 0) {
             if(senha.length > 0) {
@@ -92,7 +93,7 @@ export function Login() {
                                 <h2>Senha</h2>
                                 <input type="password" onChange={(e) => setPassword(e.target.value)} />
                                 <h2>Fazer login</h2>
-                                <input type="button" value='Registrar' onClick={(e) => registrar(userData.id)} />
+                                <input type="button" value='Registrar' onClick={() => registrar(userData.iduser)} />
 
                                 
                                 <SaveButton>

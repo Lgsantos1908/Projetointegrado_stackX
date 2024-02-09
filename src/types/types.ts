@@ -16,7 +16,7 @@ export type prato = {
 }
 
 export type users = {
-    iduser: string;
+    iduser:string;
     user: string;
     password: string;
     name: string;
