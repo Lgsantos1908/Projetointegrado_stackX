@@ -35,7 +35,7 @@ export function Especialday(){
             if (principaispratos.length > 0) {
                 const nextIndex = (currentIndex + 1) % principaispratos.length;
                 setCurrentIndex(nextIndex);
-                setSelectedLabel(principaispratos[nextIndex].id);
+                setSelectedLabel(principaispratos[nextIndex].idprato);
             }
         }, 7000);
 
@@ -50,11 +50,11 @@ export function Especialday(){
         <Container>
             <InfoFood>
                 {principaispratos.map((e,) => (
-                    <div key={e.id} onClick={() => handleLabelClick(e.id)}>
-                        <input type='radio' id={e.id} checked={selectedLabel === (e.id)} onChange={() => (e.id)}/>
-                        <label htmlFor={e.id} style={{backgroundImage: `url(${e.foto})`}}>
+                    <div key={e.idprato} onClick={() => handleLabelClick(e.idprato)}>
+                        <input type='radio' id={e.idprato} checked={selectedLabel === (e.idprato)} onChange={() => (e.idprato)}/>
+                        <label htmlFor={e.idprato} style={{backgroundImage: `url(${e.foto})`}}>
                             <div >
-                                <button>{e.id}</button>
+                                <button>{e.idprato}</button>
                                 <Description>
                                     <h4>{e.nome}</h4>
                                     <p>{e.descricao}</p>
