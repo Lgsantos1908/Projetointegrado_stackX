@@ -20,15 +20,15 @@ export function Footer() {
             <Content>
                 <Dados>
                     <h2>ENDEREÇO</h2>
-                    <p>R. Papanduva, n° 48</p>
+                    <p>R. ********, n° **</p>
 
                     <h2>HORARIO DE FUNCIONAMENTO</h2>
                     <p>Terça-feira à Sabado - 11:30 as 15h | 19h às 23h</p>
                     <p>Domingo - 19h às 21h</p>
 
                     <h2>TELEFONE</h2>
-                    <p>Telefone - (47) 3341-2655</p>
-                    <p>Celular - (47) 9 9243-1255</p>
+                    <p>Telefone - (47) ****-****</p>
+                    <p>Celular - (47) * ****-****</p>
                 </Dados>
 
                 <DadosSocial>
