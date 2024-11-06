@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { menuItens, users } from '../../types/types';
+import { menuItens } from '../../types/types';
 import { Link } from 'react-router-dom';
 import { 
     Container,
@@ -11,7 +11,7 @@ import {
 } from './styles'
 
 
-export function CardPedidos({iduser, name}: users){
+export function CardPedidos(iduser:string, name:string){
     const [cardItem, setCardItem] = useState<menuItens[]>([]);
     const [itemselecionado, setItemselecionado] = useState<boolean[]>([]);
     const [qtdItem, setQtdItem] = useState(0);

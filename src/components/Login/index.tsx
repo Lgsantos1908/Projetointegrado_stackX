@@ -13,7 +13,7 @@ export function Login() {
     const [confirmLogin, setConfirmLogin] = useState ('');
     const [userLogin, setUserLogin] = useState('');
     const [password, setPassword] = useState('');
-    const [idlogin, setIdLogin] = useState (['']);
+    const [idlogin, setIdLogin] = useState ('');
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -45,7 +45,7 @@ export function Login() {
         const name = userData.filter((e) => e.user === userLogin);
         const senha = name.filter((e) => e.password === password);
 
-        const id = name.flatMap(e => e.iduser);
+        const id = userData.find((e) => e.user === userLogin);
 
 
         if (name.length > 0) {
