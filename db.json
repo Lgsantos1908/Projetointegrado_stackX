@@ -7,22 +7,6 @@
       "name": "administrador",
       "endereço": "empresa",
       "telefone": "null"
-    },
-    {
-      "id": "ae50",
-      "user": "lgsantos",
-      "password": "123456",
-      "name": "Gabriel",
-      "endereço": "R. papanduva, 48",
-      "telefone": "47992431255"
-    },
-    {
-      "id": "1376",
-      "user": "",
-      "password": "",
-      "name": "",
-      "endereço": "",
-      "telefone": ""
     }
   ],
   "pedidos": [
